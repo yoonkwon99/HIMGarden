@@ -57,6 +57,28 @@
       border-radius: 10px;
     }
 
+    /* Back to Home Button */
+    .back-home-wrapper {
+      text-align: center;
+      margin: 60px 0 20px;
+    }
+
+    .back-home-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-home-btn:hover {
+      background-color: #3d8b40;
+    }
+
     /* Scroll Buttons */
     #scroll-buttons {
       position: fixed;
@@ -85,32 +107,54 @@
     #scroll-buttons button:hover {
       background-color: #3d8b40;
     }
-
-    /* Back to Home - bottom center */
-    .back-home-wrapper {
-      text-align: center;
-      margin: 60px 0 20px;
-    }
-
-    .back-home-btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: background-color 0.3s ease;
-    }
-
-    .back-home-btn:hover {
-      background-color: #3d8b40;
-    }
   </style>
 </head>
 
 <body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-link">🏠 Home</a>
+      <a href="farm.html" class="nav-link">🌱 Farm</a>
+      <a href="palm.html" class="nav-link">🌴 Palm Tree</a>
+      <a href="insect.html" class="nav-link">🐞 Insect Hotel</a>
+    </div>
+  </nav>
+
+  <style>
+    .navbar {
+      background-color: #4CAF50;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-link:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  </style>
+
   <header>
     <h1>Palm Tree at HIM Garden</h1>
     <p>A Story of Global Connection and Sustainability</p>
@@ -118,9 +162,7 @@
 
   <div class="container">
     <h2>A Tree with a Journey</h2>
-    <p>
-      The palm tree in our garden didn’t originally grow here. It was brought from another country and carefully planted in our school grounds. It’s a living reminder of how plants and people can connect across the world, showing how different ecosystems and species can live together when cared for properly.
-    </p>
+    <p>The palm tree in our garden didn’t originally grow here. It was brought from another country and carefully planted in our school grounds. It’s a living reminder of how plants and people can connect across the world, showing how different ecosystems and species can live together when cared for properly.</p>
 
     <h2>Why Is the Palm Tree Important?</h2>
     <ul>
@@ -152,9 +194,16 @@
       <li>Share your knowledge about palm trees with others.</li>
       <li>Help take care of every plant in the HIM Garden!</li>
     </ul>
+
+    <h2>Contact Us</h2>
+    <p>
+      <strong>HIM Business School</strong><br/>
+      Email: <a href="mailto:contact@himbusinessschool.edu">contact@himbusinessschool.edu</a><br/>
+      Phone: +123-456-7890<br/>
+      Address: Avenue des Alpes 15, 1820 Montreux VD
+    </p>
   </div>
 
-  <!-- Back to Home Button -->
   <div class="back-home-wrapper">
     <a href="index.html" class="back-home-btn">← Back to Home</a>
   </div>
