@@ -57,6 +57,38 @@
       border-radius: 10px;
     }
 
+    /* Navigation bar */
+    .navbar {
+      background-color: #4CAF50;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-link:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
     /* Back to Home Button */
     .back-home-wrapper {
       text-align: center;
@@ -116,44 +148,11 @@
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-link">🏠 Home</a>
-      <a href="farm.html" class="nav-link">🌱 Farm</a>
-      <a href="palm.html" class="nav-link">🌴 Palm Tree</a>
-      <a href="insect.html" class="nav-link">🐞 Insect Hotel</a>
+      <a href="farms.html" class="nav-link">🌱 Farm</a>
+      <a href="palmtree.html" class="nav-link">🌴 Palm Tree</a>
+      <a href="insecthotel.html" class="nav-link">🐞 Insect Hotel</a>
     </div>
   </nav>
-
-  <style>
-    .navbar {
-      background-color: #4CAF50;
-      padding: 0.5rem 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav-container {
-      max-width: 1000px;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .nav-link {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: opacity 0.2s ease;
-    }
-
-    .nav-link:hover {
-      opacity: 0.8;
-      text-decoration: underline;
-    }
-  </style>
 
   <header>
     <h1>Palm Tree at HIM Garden</h1>
@@ -229,11 +228,7 @@
 
     window.addEventListener('scroll', function () {
       const btns = document.getElementById("scroll-buttons");
-      if (window.scrollY > 200) {
-        btns.style.display = "flex";
-      } else {
-        btns.style.display = "none";
-      }
+      btns.style.display = window.scrollY > 200 ? "flex" : "none";
     });
   </script>
 
